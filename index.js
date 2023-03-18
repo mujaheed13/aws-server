@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res)=>{
-    res.send("AWS Testing with server 2");
+    res.send("AWS Testing with server 1");
 })
 
 app.listen(3030, ()=>{
