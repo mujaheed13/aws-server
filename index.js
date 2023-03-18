@@ -6,6 +6,7 @@ const { sequelize } = require("./config/config");
 const { orderRouter } = require("./routes/orderRoutes");
 const { userRouter } = require("./routes/userRouter");
 
+
 app.use("/", userRouter);
 app.use("/orders", orderRouter);
 
@@ -16,4 +17,4 @@ app.listen(8080, async () => {
   } catch (e) {
     console.log(e);
   }
-});
+})
